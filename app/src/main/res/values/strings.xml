@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MQTTonenet</string>
+    <string name="login">用户登录</string>
+    <string name="tv_username">用户:</string>
+    <string name="tv_password">密码:</string>
+    <string name="bt_log">登录</string>
+    <string name="bt_bos">取消</string>
+    <string name="et_username">输入用户名</string>
+    <string name="et_password">输入密码</string>
+    <drawable name="clr_normal">#5555</drawable>
+    <drawable name="clr_pressed">#a44100</drawable>
+    <!--<drawable name="clr_test">#FF107FFD</drawable>-->
+    <!--<drawable name="clr_test">#1ccbae</drawable>-->
+    <!--<drawable name="clr_test">#e9e6e6</drawable>-->
+</resources>

@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.my.mqttonenet"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.address.xml.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    //    androidTestImplementation 'com.android.support.address.xml:runner:1.0.2'
+    //    androidTestImplementation 'com.android.support.address.xml.espresso:espresso-core:3.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.google.code.gson:gson:2.7'
+    implementation project(':waveform')
+//    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.2.0'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
+    //compile 'com.maxproj.simplewaveform:app:1.0.0'
+    implementation files('libs/jcommon-1.0.21.jar')
+    implementation files('libs/jfreechart-1.0.17.jar')
+    implementation files('libs/jfreechart-1.0.10-swt.jar')
+    implementation files('libs/mpandroidchartlibrary-2-1-6.jar')
+    implementation files('libs/achartengine-1.2.0.jar')
+}

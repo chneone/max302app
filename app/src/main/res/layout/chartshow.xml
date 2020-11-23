@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chartHr"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chartTemper"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/chartHumi"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"></LinearLayout>
+        <!--<Button-->
+            <!--android:id="@+id/getData"-->
+            <!--android:onClick="drawshowclick"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/login_button_selector"-->
+            <!--android:text="更新数据" />-->
+        <!--<Button-->
+            <!--android:id="@+id/returnmenu"-->
+            <!--android:onClick="returnclick"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/login_button_selector"-->
+            <!--android:text="返回" />-->
+        <com.ashokvarma.bottomnavigation.BottomNavigationBar
+            android:layout_gravity="bottom"
+            android:id="@+id/bottom_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
+
+
